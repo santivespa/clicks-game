@@ -33,7 +33,7 @@ namespace ClicksGame.API
             services.AddControllersWithViews();
 
 
-            services.AddDbContext<ClicksGameContext>(b => b.UseSqlServer(Configuration.GetConnectionString("ClicksGameConnectionD"), b => b.MigrationsAssembly("ClicksGame.DAL")));
+            services.AddDbContext<ClicksGameContext>(b => b.UseSqlServer(Configuration.GetConnectionString("LocalConnectionString"), b => b.MigrationsAssembly("ClicksGame.DAL")));
 
             services.AddCors();
 
