@@ -1,0 +1,2 @@
+# clicks-game
+Aim game
