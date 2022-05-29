@@ -1,0 +1,21 @@
+<div class="margin-top-64">
+
+
+
+
+
+  <div class="row m-0">
+    <div class="col-12 col-md-6 col-lg-4 mx-auto">
+
+      <div class="padding-16 text-center">
+        <h1 class="ranking-title">Ranking</h1>
+      </div>
+
+      <h3 *ngIf="ranking[0]" class="mt-4 top1">🥇 {{ranking[0].userName}} <span class="float-end">{{ranking[0].points}}</span></h3>
+      <h3 *ngIf="ranking[1]" class="mt-4 top2">🥈 {{ranking[1].userName}} <span class="float-end">{{ranking[1].points}}</span></h3>
+
+      <h3 *ngIf="ranking[2]" class="mt-4">🥉 {{ranking[2].userName}} <span class="float-end">{{ranking[2].points}}</span></h3>
+
+    </div>
+  </div>
+</div>

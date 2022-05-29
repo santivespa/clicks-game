@@ -1,0 +1,106 @@
+
+
+.btn-main-counter {
+  color: rgb(251,243,76);
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  padding-top: 36px;
+  background: none ;
+
+  text-align: center;
+  font-weight: 800;
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+  transition: all 300ms ease-out 0s;
+  border: 1px dashed;
+  border-color: rgb(251,243,76);
+  font-size: 24px;
+
+}
+
+.container-divs {
+  width: 480px;
+  height: 480px;
+  position: relative;
+  cursor: pointer;
+}
+  .container-divs.pre-start {
+    background-color: rgb(26, 31, 53) !important;
+  }
+
+  .container-divs.pre-start > div {
+    opacity: 0.1;
+   
+  }
+
+  .btn-box {
+    cursor: crosshair !important;
+  }
+
+
+.pre-start {
+  border: 1px solid #fe6a6a;
+}
+
+.time-to-start {
+  font-size: 124px;
+  position: absolute !important;
+  width: 60px;
+  margin-left: 43% !important;
+  margin-top: 34% !important ;
+  z-index:999
+}
+
+
+
+.btn-main-counter:hover {
+  color: rgb(246, 73, 167);
+  text-shadow: rgb(246 73 167 / 40%) 0px 2px 3px;
+}
+
+
+
+
+.game-div {
+  padding-top:64px;
+}
+
+
+.current-point {
+    background-color:green !important;
+}
+
+.seconds-left {
+  font-size: 22px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.points {
+  color: rgb(89, 223, 127) !important;
+  text-shadow: rgb(89 223 127 / 40%) 0px 2px 3px;
+}
+
+.seconds-left-3 {
+  color: red !important;
+}
+
+.points-div {
+  margin-bottom: 16px;
+}
+
+.btn-restart {
+  font-size: 24px;
+  width: 140px !important;
+  position: absolute !important;
+  margin-left: calc(50% - 70px) !important;
+  margin-top: 44% !important;
+  z-index: 999;
+  border: 2px rgb(246, 73, 167) solid;
+  color: rgb(246, 73, 167) !important;
+}
+
+  .btn-restart:hover {
+    border: 2px rgb(163, 202, 205) solid !important;
+    color: rgb(163, 202, 205) !important;
+    cursor:pointer;
+  }

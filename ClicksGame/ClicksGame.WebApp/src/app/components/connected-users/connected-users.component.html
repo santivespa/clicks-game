@@ -1,0 +1,26 @@
+
+
+
+<div class="border-bottom text-center padding-16 border-color border-bottom-dashed">
+
+  <h2 class="section-title text-color m-0">Connected Users</h2>
+</div>
+
+<form [formGroup]="form" autocomplete="off" (ngSubmit)="enter()" *ngIf="!currentUserName" class="padding-16 border-bottom border-color border-bottom-dashed">
+  <input formControlName="userName" class="w-100 custom-input" placeholder="Enter your username"/>
+
+  <input type="submit" class="custom-btn  w-100 mt-2" value="enter">
+
+</form>
+
+
+<div class="padding-16">
+  <div class="w-100"  *ngFor="let u of users">
+    <label class="user-list-item"> {{u.userName}}</label>
+    <!--<a class="float-end" (click)="inviteUser(u.userName)" *ngIf="currentUserName!=u.userName">play</a>-->
+
+  </div>
+
+</div>
+
+

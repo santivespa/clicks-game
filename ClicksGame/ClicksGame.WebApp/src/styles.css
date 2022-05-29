@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Background */
+::-webkit-scrollbar-track {
+ 
+  background: rgb(89, 223, 127);
+}
+
+
+/* scroll bar */
+::-webkit-scrollbar-thumb {
+  background: rgb(246, 73, 167);
+}
+  /* scroll bar hover*/
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(246, 73, 167);
+  }
+
+
+
+.section-title{
+    font-size:18px;
+    font-weight:600;
+}
+
+.border-color {
+  border-color: rgb(163, 202, 205) !important;
+}
+.border-bottom-dashed {
+  border-bottom:1px dashed !important;
+}
+
+.border-top-dashed {
+  border-top: 1px dashed !important;
+}
+.text-color {
+  color: #9ac6c9 !important;
+}
+
+
+body {
+  color: #9ac6c9 !important;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  background-color: rgb(35,40,64);
+  font-feature-settings: "liga" 0;
+  line-height: 1.7;
+
+}
+
+a {
+  text-decoration: none;
+  text-shadow: 0 2px 3px rgb(246 73 167 / 50%);
+  font-weight: 800;
+  transition: all .3s ease-in;
+  position: relative;
+  color:rgb(89, 223, 127);
+  text-shadow: rgb(246 73 167 / 40%) 0px 2px 3px;
+
+}
+  a:hover {
+    color: rgb(89, 223, 127);
+    text-shadow: rgb(89 223 127 / 40%) 0px 2px 3px;
+  }
+
+
+.custom-btn {
+  background: none !important;
+  border-color: rgb(163, 202, 205);
+  color: rgb(163, 202, 205);
+ 
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  border: 1px dashed;
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+  transition: all 300ms ease-out 0s;
+  padding: 10px 20px;
+}
+  .custom-btn:hover {
+    color: rgb(246, 73, 167);
+    border-color: rgb(246, 73, 167);
+  }
+  .custom-btn:focus {
+    outline:none;
+  }
+
+.custom-input {
+  background: none !important;
+  border-color: rgb(163, 202, 205);
+  color: rgb(163, 202, 205);
+  border: 1px solid;
+
+}
+  .custom-input:focus {
+    outline: none;
+    border-color: rgb(246, 73, 167);
+  }
+
+
+.padding-16 {
+  padding: 16px;
+}
+
+.padding-8 {
+  padding: 8px;
+}
+
+
+.hover-dark-blue:hover {
+  background-color: rgb(26, 31, 53) !important;
+}
+
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.border-orange {
+  border: 1px solid #fe6a6a;
+}
+
+
+.cursor-pointer{
+    cursor:pointer;
+}

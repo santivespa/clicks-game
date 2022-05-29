@@ -1,0 +1,36 @@
+
+
+<div style="height:80vh" class="">
+
+  <div class="border-bottom padding-16 text-center border-color border-bottom-dashed">
+    <h2 class="section-title m-0">Chat</h2>
+
+  </div>
+  
+  <div style="max-height:93%;overflow-y:auto" class=" padding-8"  #scrollframe>
+
+      <div class="comment-box" *ngFor="let m of messages" #item>
+        <label class="fw-bold message-user" [ngClass]="{'current-user':currentUserName==m.userName,'other-user':!currentUserName!=m.userName}">
+          {{m.userName}}:
+        </label>
+        {{m.text}}
+      </div>
+   
+
+  </div>
+
+
+
+</div>
+
+<div style="height:122px;" class="padding-16 border-top border-color border-top-dashed hover-dark-blue" >
+  <form [formGroup]="form" autocomplete="off" (ngSubmit)="postMessage()">
+
+    <input formControlName="text" class="w-100 custom-input"  placeholder="{{ currentUserName ? 'Write message' : 'Please Login to send messages'}}" />
+
+    <input type="submit" class="custom-btn w-100 mt-2" value="send" >
+
+  </form>
+
+</div>
+

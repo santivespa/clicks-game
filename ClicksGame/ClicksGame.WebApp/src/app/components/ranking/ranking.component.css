@@ -1,0 +1,21 @@
+.top1 {
+  color: rgb(89, 223, 127);
+
+  text-shadow: rgb(89 223 127 / 40%) 0px 2px 3px;
+}
+
+.top2 {
+  color: rgb(246, 73, 167);
+}
+
+
+.ranking-title {
+  color: rgb(251,243,76);
+  border-bottom: 2px solid rgb(251,243,76);
+  padding-bottom:16px;
+}
+
+
+.margin-top-64 {
+  margin-top: 64px;
+}

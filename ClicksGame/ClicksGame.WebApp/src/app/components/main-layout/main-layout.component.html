@@ -1,0 +1,39 @@
+<div class="border-bottom border-end border-start" style="height:calc( 100vh - 60px)">
+
+  <nav class="navbar navbar-expand-lgr fixed-top border-bottom border-color border-top border-end border-start" style="height:61px">
+
+    <div class="container text-center" style="display:inline">
+      <a class="nav-link active" aria-current="page" routerLink="game" style="display:inline">Game</a>
+      <a class="navbar-brand m-0" href="#">Clicks</a>
+      <a class="nav-link active" aria-current="page" routerLink="ranking" style="display:inline">Ranking</a>
+    </div>
+  </nav>
+
+
+
+
+  <div class="row m-0 main-container">
+
+
+    <div class="col border-top p-0 border-color d-none d-sm-block">
+      <connected-users (emitterSuccessLogin)="setCurrentUser( $event )"></connected-users>
+    </div>
+
+    <div class="col p-0 col-md-7 border-top border-start border-end border-color">
+    
+      <div class="border-bottom text-center padding-16 border-color border-bottom-dashed" *ngIf="currentUserName">
+        <h2 class=" text-color m-0 current-user">Connected as {{currentUserName}}</h2>
+      </div>
+
+      <router-outlet></router-outlet>
+
+    </div>
+
+
+    <div class="col p-0 border-top border-color d-none d-sm-block">
+      <chat></chat>
+
+    </div>
+  </div>
+
+</div>

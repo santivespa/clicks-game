@@ -1,0 +1,62 @@
+
+<div class="game-div">
+  <div class="w-100 text-center">
+    <span>
+      <a (click)="volumeUp(!silence)" class="cursor-pointer">
+        <span *ngIf="!silence">
+          <i class="fas fa-volume-up"></i>
+        </span>    <span *ngIf="silence">
+          <i class="fas fa-volume-mute"></i>
+        </span>
+      </a>
+    </span>
+
+    <h2 class="points-div">points:  <span class="points">{{ points }}</span></h2>
+  </div>
+  <div class="container-divs mx-auto text-center pre-start" [ngClass]="{'pre-start': secondsToStart > 0 || secondsLeft == 0 || !running ,'btn-box':running && secondsToStart==0}">
+
+    <h2 *ngIf="secondsToStart > 0" class="time-to-start">{{secondsToStart}}</h2>
+    <a class="custom-btn btn-restart" (click)="restart()" *ngIf="!running">{{ !firstGame?'re':''}}start</a>
+
+
+    <div class=" d-flex justify-content-center">
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 1 == currentValue}" id="1" (click)="click(1)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 2 == currentValue}" id="2" (click)="click(2)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 3 == currentValue}" id="3" (click)="click(3)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 4 == currentValue}" id="4" (click)="click(4)">🐱</a>
+
+    </div>
+    <div class=" d-flex justify-content-center">
+      <a class="btn-main-counter custom-btn no-select box hover-dark-blue game-btn" [ngClass]="{'current-point': 5 == currentValue}" id="5" (click)="click(5)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 6 == currentValue}" id="6" (click)="click(6)">🐱</a>
+
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 7 == currentValue}" id="7" (click)="click(7)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 8 == currentValue}" id="8" (click)="click(8)">🐱</a>
+
+
+    </div>
+    <div class=" d-flex justify-content-center">
+
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 9 == currentValue}" id="9" (click)="click(9)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 10 == currentValue}" id="10" (click)="click(10)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 11 == currentValue}" id="11" (click)="click(11)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 12 == currentValue}" id="12" (click)="click(12)">🐱</a>
+
+    </div>
+    <div class=" d-flex justify-content-center">
+
+
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 13 == currentValue}" id="13" (click)="click(13)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 14 == currentValue}" id="14" (click)="click(14)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 15 == currentValue}" id="15" (click)="click(15)">🐱</a>
+      <a class="btn-main-counter custom-btn no-select hover-dark-blue game-btn" [ngClass]="{'current-point': 16 == currentValue}" id="16" (click)="click(16)">🐱</a>
+    </div>
+
+  </div>
+
+
+  <div class="w-100 text-center" *ngIf="!firstGame">
+    <h2 class="seconds-left"><span [ngClass]="{'seconds-left-3':secondsLeft<4}">{{ secondsLeft }}</span> seconds left</h2>
+  </div>
+
+</div>

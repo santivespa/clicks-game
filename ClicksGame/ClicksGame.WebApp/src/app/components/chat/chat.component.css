@@ -1,0 +1,33 @@
+
+
+.chat-container {
+  height: 78vh !important;
+}
+
+
+.messages-container {
+  max-height: 90% !important;
+  overflow-y: auto
+}
+
+.form-container {
+  height: 10vh !important;
+}
+
+
+.current-user {
+  color: rgb(89, 223, 127) !important;
+  text-shadow: rgb(89 223 127 / 40%) 0px 2px 3px;
+}
+.message-text{
+
+}
+.message-box {
+  background-color:rgb(26, 31, 53);
+  color:red;
+}
+
+.other-user {
+  text-shadow: rgb(30 160 242 / 40%) 0px 2px 3px;
+  color: rgb(30, 160, 242)
+}

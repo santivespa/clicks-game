@@ -1,0 +1,33 @@
+
+
+.btn-main-counter {
+  color: rgb(251,243,76);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 36px;
+  background: none ;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 800;
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+  transition: all 300ms ease-out 0s;
+  border: 2px dashed;
+  border-color: rgb(251,243,76);
+  font-size: 24px;
+
+}
+
+
+  .btn-main-counter:hover {
+    color: rgb(246, 73, 167);
+    text-shadow: rgb(246 73 167 / 40%) 0px 2px 3px;
+
+  }
+
+.counter-div {
+  height: calc(90vh - 61px);
+}
+
+
